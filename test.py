@@ -50,7 +50,7 @@ def generate(args):
     model.eval()
 
     # Directory
-    img_dir = os.path.join('../all_datasets/', args.dataset)
+    img_dir = os.path.join('./all_datasets/', args.dataset)
     save_dir = os.path.join('./results/', args.dataset)
     if not os.path.exists(save_dir):
         os.mkdir(save_dir)
