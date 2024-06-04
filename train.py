@@ -123,7 +123,7 @@ class TrainNr2N:
                 with torch.no_grad():
                     self.model.eval()
 
-                    num_data = 10
+                    num_data = 4
                     for index in range(num_data):
                         data = self.test_dataset[index]
                         sample_clean, sample_noisy, sample_noisier = data['clean'], data['noisy'], data['noisier']
